@@ -1,0 +1,32 @@
+.videoplayer-div-main{
+    display: flex;
+}
+
+.videoplayer-catalog-button{
+    display: flex;
+    margin-left: 1vh;
+
+    cursor: pointer;
+    text-align: left;
+    background-color: transparent;
+    border: hidden;
+
+    margin-bottom: 1vh;
+}
+
+.videoplayer-catalog{
+    margin-top: 0vh;
+}
+
+.videoplayer-catalog-button:hover{
+    background-color: rgba(0, 0, 0, 0.15)
+}
+
+.videoplayer-catalog-image{
+    width: auto;
+    height: 15vh;
+}
+
+.videoplayer-catalog-info{
+    padding-left: 1vh;
+}

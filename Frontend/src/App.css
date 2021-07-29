@@ -1,0 +1,14 @@
+.App {
+    background: linear-gradient(330deg, #aaaaaa70, white);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.App-routes{
+    margin-left: 5vh;
+    margin-top: 7.5vh;
+}
