@@ -3,14 +3,23 @@ import { CatalogImagesAPIURL } from '../Constants';
 
 import "./Catalog.css";
 
+/**
+ * 
+ * @param item catalog element from all other elements of main catalog
+ */
 export function GoToVideo(item : CatalogElement){
     window.location.href = `/videoplayer/${item.keyword}`;
 }
 
+/**
+ *
+ * @param props main catalog(pre-filtered or not)
+ * @returns catalog of home page
+ */
 function Catalog(props : CatalogElement[]){
 
     /**
-     * 
+     * Max elements on the page's catalog
      */
     const MAX_Result = 20;
 

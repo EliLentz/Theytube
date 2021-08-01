@@ -8,7 +8,7 @@ import { CatalogElement } from "../Models/CatalogElement";
 import "./VideoPlayer.css";
 
 /**
- * 
+ * @type videoInfoPromise - promise of current catalog element, videoInfo - parsed promise of videoInfoPromise to regular catalogElement
  */
 type CatalogElementState = {
     videoInfoPromise : Promise<CatalogElement>,
@@ -16,7 +16,7 @@ type CatalogElementState = {
 }
 
 /**
- * 
+ * @type id - keyword, catalog - the global catalog
  */
 type CatalogElementProps = {
     id : string,
@@ -24,7 +24,7 @@ type CatalogElementProps = {
 }
 
 /**
- * 
+ * Videoplayer class, that gets a promise of catalog element
  */
 class Videoplayer extends React.Component<CatalogElementProps, CatalogElementState>{
     constructor(props : CatalogElementProps){
@@ -41,12 +41,12 @@ class Videoplayer extends React.Component<CatalogElementProps, CatalogElementSta
 
     /**
      * 
-     * @returns 
+     * @returns catalog view with maximum 20 elements and without current prop element
      */
     CatalogView = () => {
 
         /**
-         * 
+         * Max elements on the page's catalog
          */
         const MAX_Result = 20;
 

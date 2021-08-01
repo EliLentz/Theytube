@@ -5,11 +5,11 @@ import magnifier_on_focus from "../Assets/Images/magnifier_on_focus.png"
 
 /**
  * 
- * @returns 
+ * @returns header
  */
 function Header(){
     /**
-     *  
+     *  If current page isn't main, returns it to main. Else scrolls it up
      */
     function ScrollUpOrBackToMain(){
         if(window.location.href === 'http://127.0.0.1:3600/' || window.location.href === 'http://localhost:3600/')

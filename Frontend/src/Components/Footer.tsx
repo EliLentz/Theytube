@@ -1,5 +1,9 @@
 import "./Footer.css";
 
+/**
+ * 
+ * @returns footer
+ */
 function Footer () {
     return (
         <div>
